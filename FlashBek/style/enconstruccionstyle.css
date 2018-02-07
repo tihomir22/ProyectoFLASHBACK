@@ -1,0 +1,70 @@
+@font-face{
+    font-family:"GeosansLight";
+    font-style:normal;
+    font-weight:normal;
+    src:url(../fonts/GeosansLight.ttf);
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+#wrapper2{
+    margin: 0 auto;
+    width: 100%;
+    height: 989px;
+    background-image: url(../style/1446096-abstract-minimalist-wallpaper-hd-desktop-download.png);
+    z-index: 0;
+    background-repeat: no-repeat;
+
+
+}
+#wrapper2 div{
+    background-color: purple;
+    
+}
+#wrapper2 span{
+    color: white;
+    font-family: GeosansLight;
+    font-size: 70px;
+    position: absolute;
+    top: 260px;
+    left: 430px;
+    z-index: 1;
+
+}
+#wrapper2 p{
+    color: white;
+    position: absolute;
+    top: 350px;
+    left: 430px;
+    font-style: italic;
+    z-index: 1;
+
+}
+#wrapper2 #imgworker1{
+    position: absolute;
+    left: -70px;
+    top: -40px;
+    z-index: 0;
+
+}
+#wrapper2 #imgworker2{
+    
+    position: absolute;
+    left: 1200px;
+    z-index: 0;
+    width: 500px;
+    transform: rotate(20deg);
+
+}
+#wrapper2 #logoflash22{
+    position: absolute;
+    width: 300px;
+    top: 350px;
+    left: 430px;
+
+}
