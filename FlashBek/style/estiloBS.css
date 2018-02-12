@@ -6,6 +6,7 @@
 
 
 }
+
 .navbar{
     margin-bottom: 0;
     border-radius: 0;
@@ -28,18 +29,56 @@
     z-index: 2;
     width: 75px;
     margin-right: -10px;
-
-
-
 }
-
+*{
+    text-align:justify;
+    margin: 0;
+    padding: 0;
+}
 .carousel-inner{
     border-bottom: 20px solid #7FDBFF;
 }
-#solucion_1{
+#pow h1,h3,h4{
+    text-align: center;
+}
+#textoBook{
+    margin-top: -50px;
+    margin-left: -90px;
+    text-align: justify;
+}
+#contenedorSolu{
     background:linear-gradient(to right,purple,#001f3f);
     color: white;
     width: 100%;
+    padding-top: 2%;
+    margin-top: auto;
+    margin-left: -15px;
+}
+#contenedorSolu img{
+    margin-left: 20%;
+}
+#contenedorSolu2{
+    margin-top: -2%;
+    padding-right: 60px;
+    text-align: justify;
+}
+#contenedorProbl{
+    background:linear-gradient(to right,#001f3f,purple);
+    color: white;
+    width: 100%;
+
+
+}
+#contenedorProbl img{
+    margin-left: 40%;
+
+}
+#contenedorProbl h3,p{
+    margin-left: 20%;
+}
+#otrasCa p{
+    margin-left: -10px;
+    text-align: justify;
 }
 .navbar-header h1{
     float:left;
@@ -90,9 +129,12 @@ h1,h2,h3,h4{
 li{
     list-style: none;
 }
+.modal-dialog{
+    width: 100%;
+}
 
 .col-md-6{
-    border-top: 1px solid lightgray;
+
     padding: 10px;
 }
 .col-sm-4 h4{
@@ -100,17 +142,12 @@ li{
     color:gray;
 }
 .container{
-    margin: 4% auto;
+    margin: 50px auto;
     border-bottom:1px solid lightgray;
 }
-#problema{
-    height:422px;
-}
 
-#solucion{
-    height:422px;
-    margin-top: 15%;
-}
+
+
 #librorow1{
     height: 422px;
     border-radius: 50px;
@@ -121,6 +158,9 @@ li{
 #elEquipo h1{
     text-align: center;
 }
+#elEquipo p{
+    margin-left: -15px;
+}
 #road h1{
     text-align: center;
 }
@@ -130,6 +170,8 @@ li{
     margin:10px;
 
 }
+
+
 #divRojo{
     background-color: #FF4136;
     color: white;
@@ -139,6 +181,8 @@ li{
 }
 #divRojo p{
     padding: 5px;
+    margin-left: -12px;
+    margin-top: 5px;
 }
 #divNaranja{
     background-color: #FF851B;
@@ -148,6 +192,8 @@ li{
 }
 #divNaranja p{
     padding: 5px;
+    margin-left: -12px;
+    margin-top: 5px;
 }
 #divYellow{
     background-color: #FFDC00;
@@ -158,6 +204,8 @@ li{
 
 #divYellow p{
     padding: 5px;
+    margin-left: -12px;
+    margin-top: 5px;
 }
 #divCyan{
     background-color: #001f3f;
@@ -166,8 +214,10 @@ li{
 }
 #divCyan p{
     padding: 5px;
+    padding-bottom: 7px;
+    margin-left: -12px;
+    margin-top: 5px;
 }
-
 
 .btn:hover{
     background-color: cadetblue;
@@ -185,7 +235,7 @@ li{
 }
 #iotaExp img{
     margin: 10%;
-    
+
 }
 #iotaTextFix{
     margin: 5%;
@@ -195,7 +245,6 @@ footer{
     background-color: #7FDBFF;
     color:white;
 }
-
 .fa{
     padding: 25px;
     font-size:30px;
@@ -212,7 +261,6 @@ footer{
     font-size: 27px;
     padding: 10px;
 }
-
 .bigicon {
     font-size: 35px;
     color: #36A0FF;
@@ -260,4 +308,38 @@ footer{
     #iotaExpImg{
         width: 50%;
     }
+    #contenedorProbl img{
+        width: 50%;
+    }
+    #contenedorSolu img{
+        width: 50%;
+    }
+    .modal-dialog{
+        width: 95%;
+
+    }
+    #road img{
+        width: 100%;
+    }
+    #textoBook h4{
+        margin-left: 90px;
+    }
+    #librorow1{
+        height: 220px;
+        margin-bottom: 50px;
+    }
+    #elEquipo p{
+        margin-left: -10px;
+    }
+    #divRojo,#divNaranja,#divYellow,#divCyan{
+        height: auto;
+    }
+    .container li{
+        padding-left: 20px;
+    }
+    .progress{
+        padding-left: 5px;
+    }
+    
+
 }

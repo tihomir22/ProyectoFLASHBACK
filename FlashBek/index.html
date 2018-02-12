@@ -8,9 +8,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style/estiloBS.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
+        <link rel="stylesheet" type="text/css" href="aos/dist/aos.css">
+
+
+
         <script>$(document).on('click', 'a[href^="#"]', function (event) {
                 event.preventDefault();
 
@@ -54,11 +55,11 @@
                 <li data-target="#miGaleria" data-slide-to="2" ></li>
 
             </ol>
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner" role="listbox" id=pow>
                 <div class="item active">
                     <img id=img1 src="style/mountains_fog_clouds_fir-trees_wood_frosts_cool_morning_46129_1920x1200.jpg">
                     <div class="carousel-caption">
-                       
+
                         <h1>Bienvenidos a la plataforma de los mejores escritores</h1>
                         <h3>Red social, plataforma unica, economia, utopia</h3>
                         <br>
@@ -97,21 +98,21 @@
             </a>
 
         </div>
-        
+
         <div class="container text-center"  >
             <h2 class="animated bounce infinite">Que ventajas tiene Flashback?</h2><br>
             <div class="row">
-                <div class=col-sm-4>
+                <div class=col-sm-4 data-aos="fade-right" data-aos-duration="1000" >
                     <img src="style/CRYPTOICONS/512/decentralized.png" id="icon">
-                    <h4>Descentralizacion</h4>
+                    <h4 id=pow2>Descentralizacion</h4>
                 </div>
                 <div class=col-sm-4>
-                    <img src="style/CRYPTOICONS/512/wallet.png" id="icon">
-                    <h4>Ingresos pasivos</h4>
+                    <img src="style/CRYPTOICONS/512/wallet.png" id="icon" data-aos="fade-right" data-aos-duration="1000" >
+                    <h4 id=pow2>Ingresos pasivos</h4>
                 </div>
                 <div class=col-sm-4>
-                    <img src="style/CRYPTOICONS/512/p2p.png" id="icon">
-                    <h4>Rapideza</h4>
+                    <img src="style/CRYPTOICONS/512/p2p.png" id="icon" data-aos="fade-right" data-aos-duration="1000">
+                    <h4 id=pow2>Rapideza</h4>
                 </div>
 
             </div>
@@ -119,43 +120,59 @@
         <div class=container>
             <div class=row>
                 <div class="col-md-6">
-                    <img id=librorow1 src="style/book-rocket.png" height="40%" class="img-responsive" >
+                    <img id=librorow1 src="style/book-rocket.png" height="40%" class="img-responsive"  data-aos="slide-up" data-aos-duration="1000">
                 </div>
-                <div class="col-md-6"><br><br>
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000" id=textoBook >
                     <h4>Resurgiendo de las cenizas</h4>
-                    <p>Flashback pretende modificar el significado y embellecerlo con un toque radiante, se desea que cuando un usuario elige utilizar la plataforma "FLASHBACK" se lleve a un nivel nuevo de escritura y que pueda llevar sus sueños a cabo. El usuario contará con un sistema de experiencia que irá aumentando a medida que este vayas publicando capítulos de su novela favorita. También una vez hecha la subida, podrá recibir valoraciones, comentarios de los visitantes y incluso podrán recompensarle con la tecnologia de IOTA , una criptomoneda  destinada a satisfacer las necesidades de la plataforma a la vez que descentralizan el ecosistema digital</p>
+                    <p>Flashback pretende modificar el significado y embellecerlo con un toque radiante, se desea que cuando un usuario elige utilizar la plataforma "FLASHBACK" se lleve a un nivel nuevo de escritura y que pueda llevar sus sueños a cabo. El usuario contará con un sistema de experiencia que irá aumentando a medida que este vayas publicando capítulos de su novela favorita.
+                    <br> También una vez hecha la subida, podrá recibir valoraciones, comentarios de los visitantes y incluso podrán recompensarle con la tecnologia de IOTA , una criptomoneda  destinada a satisfacer las necesidades de la plataforma a la vez que descentralizan el ecosistema digital</p>
                     <p>El significado se podría entender como una visión del pasado que se vive en el presente, la mayoría de personas que escribieron alguna vez en su vida y lo dejan, a la hora de retomarlo les entra ese complejo, ese recuerdo p
-                    unzante, el miedo de que les vuelva a ocurrir lo mismo  y se vean frustrados de nuevo. </p>
+                        unzante, el miedo de que les vuelva a ocurrir lo mismo  y se vean frustrados de nuevo. </p>
                 </div>
-            </div>
-            <div class=row>
-                <div class="col-md-6">
-                    <br><br>
-                    <h3>Problema? Problemón ... </h3>
-                    <p>A menudo la publicacion de una novela es un incordio por diferentes motivos, muchos escritores dejan de escribir a mitad de camino,desmotivados y preocupados por si su novela logrará ser exitosa y aceptable por un publico cada vez mas exigente, otros ni empiezan a escribir, por la complejidad y el miedo que les infunde aveces realizar una obra literaria. Algunos valientes logran terminar su novela despues de una lucha encarnizada pero se topan con la prueba final, la publicacion y la posterior distribución de su  obra literaria. </p>
-                    <p>Los editores en su corrupto sistema rechazan a los escritores noveles sin aveces leer el libro en sí. </p>
-                </div>
-                <div class="col-md-6">
-                    <img id=problema src="style/CRYPTOICONS/512/disclosed_identity.png" class="img-responsive" >
-                </div>
-
             </div>
         </div>
-           <div class="container">
+        
+        <div class=row id=contenedorProbl>
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                <br><br>
+                <h3>Problema? Problemón ... </h3>
+                <p>A menudo la publicacion de una novela es un incordio por diferentes motivos, muchos escritores dejan de escribir a mitad de camino,desmotivados y preocupados por si su novela logrará ser exitosa y aceptable por un publico cada vez mas exigente, otros ni empiezan a escribir, por la complejidad y el miedo que les infunde aveces realizar una obra literaria. Algunos valientes logran terminar su novela despues de una lucha encarnizada pero se topan con la prueba final, la publicacion y la posterior distribución de su  obra literaria. </p>
+                <p>Los editores en su corrupto sistema rechazan a los escritores noveles sin aveces leer el libro en sí. </p>
+                <img src=style/grafico_reparto.png width="40%">
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+                <img id=problema src="style/CRYPTOICONS/512/disclosed_identity.png" class="img-responsive" >
+            </div>
+
+        </div>
+
+        <div class="container" id=contenedorSolu>
             <div class=row >
-                <div class="col-md-6">
-                    <img id=solucion src="style/CRYPTOICONS/512/free.png" height="40%" class="img-responsive" >
+                <div class="col-md-6" >
+                    <img src="style/CRYPTOICONS/512/free.png" height="40%" class="img-responsive" data-aos="fade-up" data-aos-duration="1000" >
                 </div>
-                <div class="col-md-6">
-                    <br><br>
-                    <h3>Solución</h3>
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000" id=contenedorSolu2>
+                    
+                    <h2>Solución</h2>
                     <ul>
                         <li><i class="glyphicon glyphicon-chevron-right"></i> Creación de una plataforma dinámica y sencilla con el objetivo de apoyar a los escritores</li>
                         <li><i class="glyphicon glyphicon-chevron-right"></i> Un sistema de recompensa financiera con una criptodivisa libre del yugo de los grandes bancos, intercambiable entre los usuarios y con un precio variable.</li>
                         <li><i class="glyphicon glyphicon-chevron-right"></i> Un sistema de experiencia(parecida al sistema de "levelo" en juegos MMORPG), el usuario empezara por nivel 1 y ira subiendo a medida que realice tareas, envíe paginas, capítulos... Cada nivel tendrá beneficios diferentes, algunos ejemplos.</li><br>
                         <ul>
-                            <li class=izQli><i class="glyphicon glyphicon-triangle-right"></i> <strong>Nivel 0:</strong> El usuario no podrá enviar sus relatos hasta que confirme su dirección de email y escriba 5 comentarios y reseñas ajenas.</li>
+                            <li class=izQli><i class="glyphicon glyphicon-triangle-right"></i> <strong>Nivel 0:</strong> El usuario no podrá enviar sus relatos hasta que confirme su dirección de email y escriba 5 comentarios y reseñas ajenas.</li><br>
+                            <div class="progress" style="height: 1px;">
+                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="progress" style="height: 20px;">
+                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">35% necesario para subir</div>
+                            </div>
                             <li class=izQli><i class="glyphicon glyphicon-triangle-right"></i> <strong>Nivel 1:</strong> El usuario recibe sus primeras IOTAS gratis, también puede empezar a usar el editor de la pagina y enviar sus capítulos o también subirlos por archivo. Tendrá limitaciones como numero de caracteres permitidos o peso máximo de archivo subido.</li><br>
+                            <div class="progress" style="height: 1px;">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="progress" style="height: 20px;">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75% para siguiente nivel</div>
+                            </div>
 
 
                         </ul>
@@ -167,7 +184,7 @@
             </div>
         </div>
 
-        <div class=container>
+        <div class=container  data-aos="fade-up" data-aos-duration="1000" id=otrasCa>
             <h3>Y mucho mas...</h3><br>
             <div class=row>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
@@ -181,7 +198,7 @@
 
                 <div id=colseguro class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
                     <h4>Seguro</h4>
-                    <p>En Flashback nos tomamos muy en cuenta la seguridad y la privacidad, tus fondos, datos y archivos nunca serán vendidos a terceros ni distruibuidos sin tu consentimento, gracias a la tecnologia Blockchain se puede llevar un control exhaustivo sobre cualquier movimiento !</p>
+                    <p>En Flashback nos tomamos muy en cuenta la seguridad y la privacidad, tus fondos, datos y archivos nunca serán vendidos a terceros ni distruibuidos sin tu consentimento, gracias a la tecnologia Blockchain se puede llevar un control exhaustivo sobre cualquier movimiento!</p>
 
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -217,7 +234,7 @@
         <div id=elEquipo class=container>
             <h1>EL EQUIPO</h1><br>
             <div class=row>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 "  data-aos="flip-right" data-aos-duration="1000">
                     <img src="style/myAvatar.png" width="95%" class="image-responsive">
                     <h4>Tihomir Stoychev Stoychev</h4>
                     <p>CEO de Flashback y programador, con conocimientos en la administracion de empresas y la programacion. Desde muy pequeño sintió un gran interes por la tecnologia y lo revolucionario.</p>
@@ -226,7 +243,7 @@
                     <a id=equipoico3 href=# class="fa fa-youtube"></a>
                     <a id=equipoico2 href=# class="fa fa-linkedin"></a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 " data-aos="flip-left" data-aos-duration="2000">
                     <img src="style/myAvatar%20(1).png" width="95%" class="image-responsive">
                     <h4>Marcos Torres Pérez</h4>
                     <p>Programador y Experto en literatura, amplios conocimientos en redes y instalacion de estas, ecologista y amante de los animales,el corazon de Flashback.</p>
@@ -234,7 +251,7 @@
                     <a id=equipoico2 href=# class="fa fa-google"></a>
                     <a id=equipoico3 href=# class="fa fa-instagram"></a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 " data-aos="flip-right" data-aos-duration="3000">
                     <img src="style/myAvatar%20(2).png" width="95%" class="image-responsive">
                     <h4>Aitor Benavent Aparicio</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus omnis id temporibus placeat provident rem nulla eius unde molestiae maxime incidunt, ut quaerat dolore error similique, itaque repellat accusantium quia.</p>
@@ -245,38 +262,60 @@
             </div>
 
         </div>
-        <div id=road class=container>
+        <div id=road class=container >
             <h1>NUESTRO ROADMAP</h1>
             <div class="col-lg-12 ">
-                <img src="style/d788269f31687eaeec2d47ed409776b5.png" width="100%" class="image-responsive">
+               
+               <!-- <a data-toggle="modal" data-target="#modal-1" ></a>-->
+                    <img src="style/d788269f31687eaeec2d47ed409776b5.png" width="100%" class="image-responsive" alt="Roadmap FLASHBACK 2018">
+                
+<!--
+                <div class="modal" id="modal-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="modal-title">Nuestro roadmap</h3>
+                            </div>
+                            <div class="modal-body">
+                                <img id=modalimg src="BoostrapAlpha/style/d788269f31687eaeec2d47ed409776b5.png">
+                            </div>
+                            <div class="modal-footer">
+                                <a href="" class="btn btn-default" data-dismiss="modal">Close</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
             </div>
+
             <div class=row> 
-                <div id=divRojo class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+                <div id=divRojo class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " data-aos="fade-right" data-aos-duration="500">
 
                     <p>Discusion de ideas y conceptos, se comparten ideas viables y se discuten entre el equipo y se llega a un acuerdo, se realizan estudios de viabilidad y requisitos de sistema.</p>
                 </div>
-                <div id=divNaranja class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+                <div id=divNaranja class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " data-aos="fade-right" data-aos-duration="1000">
                     <p>El equipo pretende dar sus primeros coletazos, pasando del diseño a la codificación con herramientas como HTML,CSS, PHP. En esta fase la pagina web se someterá a muchos cambios diaramente. </p>
                 </div>
-                <div id=divYellow class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+                <div id=divYellow class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " data-aos="fade-right" data-aos-duration="2000">
                     <p>Se termina el diseño estatico de la pagina, se crearán base de datos para guardar la informacion de los usuarios y se implementará caracteristicas dinamicas en la pagina y plataforma.</p>
                 </div>
-                <div id=divCyan class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+                <div id=divCyan class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " data-aos="fade-right" data-aos-duration="2000">
 
                     <p>Se lanzará la pagina web, en un principio solamente la pagina hasta que se logre pulir la plataforma, una vez se compruebe la funcionalidad de la plataforma esta se lanzará junto a sus caracteristicas principales.</p>
                 </div>
             </div>
         </div>
         <div class="clearfix visible-sm-block"></div>
-        <div class=container id=iotaExp>
+        <div class=container id=iotaExp >
             <h1>POR QUÉ IOTA?</h1>
             <div class=row>
-                <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+                <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12" data-aos="fade-right" data-aos-duration="1000">
                     <img id=iotaExpImg src="style/DMwk3bpXcAAqnNg.png">
 
                 </div>
                 <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
-                    <div id=iotaTextFix>
+                    <div id=iotaTextFix data-aos="fade-right" data-aos-duration="1000">
 
                         <p>Con el auge de las criptomonedas muchas fueron creadas, actualmente existen más de 1500 criptomonedas y todas tienen un proposito diferente y se parece entre sí de alguna manera, todas menos IOTA.</p>
                         <p>IOTA es un DAG (Directed Acyclic Graph), un grafo aciclico dirigido en español, es una nueva tecnologia lanzada en 2014, por apenas 5 miembros. Esta tecnologia se parecec a las famosas criptomonedas como Bitcoin pero es bastante opuesta, de primeras, no utiliza la cadena de bloques tipica, sino una "enredadera" llamada el Tangle, tambien se eliminan los mineros, individuos que usan sus computadoras para calcular algoritmos los cuales mantienen la infraestructura de la cadena de bloques. Esto asusta a muchos y, enfada a algunos (a los mineros) , ya que IOTA gracias a la eliminacion de los mineros sus transacciones son totalmente gratuitas, para siempre, mientras que por otro lado, en el Bitcoin, la comisión minima es de 20$ y aumentando. Tambien resuelve otro de los enigmas de su campo, la escalabilidad, ya que en la cadena de bloques cuanto mayor es el uso de esta mas se relantiza, creando un cuello de botella.</p>
@@ -295,7 +334,14 @@
                 <div class="col-md-12">
                     <h4><a href="#hidden" data-toggle="collapse"> Mas sobre iota</a></h4>
                     <div id=hidden class=collapse>
-                        <p>En Flashback nos tomamos muy en cuenta la seguridad y la privacidad, tus fondos, datos y archivos nunca serán vendidos a terceros ni distruibuidos sin tu consentimento, gracias a la tecnologia Blockchain se puede llevar un control exhaustivo sobre cualquier movimiento !</p>
+                        <div>
+                            <p>Documento cortesia de CryptoProfitsESP, colaborador de Flashback</p>
+                            <object data="QueesIOTA.pdf" type="application/pdf" width="100%" height="800px"> 
+                                <p>It appears you don't have a PDF plugin for this browser.
+                                    No biggie... you can <a href="QueesIOTA.pdf">click here to
+                                    download the PDF file.</a></p>  
+                            </object>
+                        </div>
 
                     </div>
                 </div>
@@ -312,20 +358,20 @@
                                 <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                        <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="lname" name="name" type="text" placeholder="Apellidos" class="form-control">
+                                        <input id="lname" name="name" type="text" placeholder="Apellidos" class="form-control" required>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <input id="email" name="email" type="text" placeholder="Correo electronico" class="form-control">
+                                        <input id="email" name="email" type="text" placeholder="Correo electronico" class="form-control" required>
                                     </div>
                                 </div>
 
@@ -339,7 +385,7 @@
                                 <div class="form-group">
                                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                                     <div class="col-md-8">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Introduce tu mensaje aqui, te responderemos en un maximo de 2 dias laborales ." rows="7"></textarea>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Introduce tu mensaje aqui, te responderemos en un maximo de 2 dias laborales ." rows="7" required></textarea>
                                     </div>
                                 </div>
 
@@ -378,5 +424,14 @@
             </div>
 
         </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="aos/dist/aos.js"></script>
+        <script type="text/javascript">
+            AOS.init({
+                easing: 'ease-in-out-sine'
+            });
+        </script>
     </body>
 </html>
