@@ -6,7 +6,13 @@
 
 
 }
+<<<<<<< HEAD
 
+=======
+*{
+    text-align: justify;
+}
+>>>>>>> 740e74342f0a513bd072f9a2cd600f817c34d4ea
 .navbar{
     margin-bottom: 0;
     border-radius: 0;
@@ -170,6 +176,15 @@ li{
     margin:10px;
 
 }
+<<<<<<< HEAD
+=======
+#road img:hover{
+    opacity: 0.7;
+}
+.modal-body img:hover{
+    opacity 1;
+}
+>>>>>>> 740e74342f0a513bd072f9a2cd600f817c34d4ea
 
 
 #divRojo{
@@ -308,6 +323,7 @@ footer{
     #iotaExpImg{
         width: 50%;
     }
+<<<<<<< HEAD
     #contenedorProbl img{
         width: 50%;
     }
@@ -342,4 +358,14 @@ footer{
     }
     
 
+=======
+    .modal-dialog{
+    width: 95%;
+  
+}
+    #road img{
+    width: 100%;
+}
+    
+>>>>>>> 740e74342f0a513bd072f9a2cd600f817c34d4ea
 }
