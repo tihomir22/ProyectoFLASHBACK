@@ -53,6 +53,7 @@
     padding-top: 2%;
     margin-top: auto;
     margin-left: -15px;
+    padding-bottom: 60px;
 }
 #contenedorSolu img{
     margin-left: 20%;
@@ -61,17 +62,25 @@
     margin-top: -2%;
     padding-right: 60px;
     text-align: justify;
+    
 }
 #contenedorProbl{
     background:linear-gradient(to right,#001f3f,purple);
     color: white;
     width: 100%;
+    border-bottom: 5px solid white;
+    
 
 
 }
 #contenedorProbl img{
     margin-left: 40%;
 
+}
+#grafic1{
+    background-color: white;
+    border-radius: 50px;
+    border:2px solid #01FF70;
 }
 #contenedorProbl h3,p{
     margin-left: 20%;
@@ -339,7 +348,19 @@ footer{
     }
     .progress{
         padding-left: 5px;
+        
     }
+    #imPresentacion1,#imPresentacion2,#imPresentacion3 img{
+        margin-left: 100px;
+    }
+    #imPresentacion3 h4{
+        margin-left: 60px;
+    }
+    #h2prese{
+        letter-spacing: -2px;
+    }
+    
+    
     
 
 }
