@@ -8,27 +8,33 @@
         <meta name="keywords" content="website keywords, website keywords" />
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" type="text/css" href="style/styleLogin.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="aos/dist/aos.css">
     </head>
 
     <body>
-        <div id=wrapper>
-            <header>
-            <span>FLASHBACK</span>
-            <img src="style/Flashback0102gris.png">
-            
-            </header>
+        <div id=wrapper >
+            <div class=row>
+                <header >
+                    <span>FLASHBACK</span>
+                    <img src="style/Flashback0102gris.png">
+
+                </header>
+            </div>
             <div id=Exposicion>
                 <h1>Bievenido a la red social de Flashback, Poet !</h1><br>
                 <p>Estas muy cerca de comenzar a disfrutar las ventajas de usar Poet, una plataforma social donde compartir tus relatos y interactuar con otros escritores o lectores.</p>
-                
+
                 <div id=registro>
                     <br>
                     <a href="index.html"><input type="button"  value="Registrar ahora" ></a>
-                    
+
                 </div>
             </div>
-            
-            
+
+
             <div id=form>
                 <p>Acceso/Registro</p>
                 <form method="post" action="procesarFormulario.php">
@@ -60,6 +66,13 @@
             </div>
 
         </div>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="aos/dist/aos.js"></script>
+        <script type="text/javascript">
+            AOS.init({
+                easing: 'ease-in-out-sine'
+            });
+        </script>
     </body>
 </html>
