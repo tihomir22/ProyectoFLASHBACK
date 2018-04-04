@@ -24,6 +24,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['avatar']=$user['avatar'];
                 $_SESSION['Nivel']=$user['Nivel'];
                 $_SESSION['Rango']=$user['Rango'];
+                $_SESSION['Experencia']=$user['Experencia'];
+                $_SESSION['idUsuario']=$user['idUsuario'];
+
+                $mysqli->query("UPDATE usuarios SET Experencia=Experencia+10 WHERE username='$usuario'"); //Para cada login la experencia sube 10 puntos
 
 
 
@@ -67,10 +71,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         $_SESSION['avatar'] = $avatar_path;
                         $_SESSION['Nivel']='1';
                         $_SESSION['Rango']="Desconocido";
+                        $_SESSION['Experencia']="10";
 
                     //insertar informacion del usuario en la base de datos
-                        $sql = "INSERT INTO usuarios (username, email, password, avatar, Nivel, Rango) "
-                        . "VALUES ('$username', '$email', '$password', '$avatar_path', '1', 'Desconocido')";
+                        $sql = "INSERT INTO usuarios (username, email, password, avatar, Nivel, Rango, Experencia) "
+                        . "VALUES ('$username', '$email', '$password', '$avatar_path', '1', 'Desconocido','10')";
 
                     //comprobar si fue un exito
                         if ($mysqli->query($sql) === true){
