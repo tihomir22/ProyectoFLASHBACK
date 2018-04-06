@@ -12,12 +12,14 @@
 
 
 		<ul class="list-group list-group-unbordered">
+			
 			<li class="list-group-item">
 				<i class="fa fa-group"></i><b> Seguidores</b> <a class="pull-right">1,322</a>
 			</li>
 			<li class="list-group-item">
 				<i class="fa fa-group" style="color:#0074D9;"></i><b> Seguidos</b> <a class="pull-right">543</a>
 			</li>
+	
 			<li class="list-group-item">
 				<i class="fa fa-heart" style="color:#FF4136"></i><b> Amigos</b> <a class="pull-right">13,287</a>
 			</li>
@@ -29,7 +31,7 @@
 			</li>
 		</ul>
 
-		<a href="#" class="btn btn-primary btn-block"><b>Seguir</b></a>
+		<a href="#" class="btn btn-primary btn-block"><b><i style="float:left;" class="ion-plus-round"></i>Seguir</b></a>
 	</div>
 	<!-- /.box-body -->
 </div>
@@ -38,10 +40,3 @@
 
 
 
-<!--<?php 
-
-echo '<h4>'.$_SESSION['libros_leidos'].'</h4>';
-echo '<h4>'.$_SESSION['gusta_escribir'].'</h4>';
-?>
-
--->

@@ -7,7 +7,7 @@
 *{
     margin: 0;
     padding: 0;
-    overflow:hidden;
+    
 
 }
 
@@ -141,7 +141,7 @@ h4{
 
 @media (max-width:800px){
     *{
-        overflow: hidden;
+       
     }
     a{
         display: none;

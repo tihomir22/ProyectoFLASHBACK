@@ -106,8 +106,9 @@
 
     <strong><i class="fa fa-file-text-o margin-r-5"></i> Escritura</strong>
     <p><?=$_SESSION['gusta_escribir']?></p>
-    <form action="plataformaN.php" method="POST">
-      <button class="btn btn-primary btn-block" id="ajustesPers" name="reiniciarModal">Modificar datos</button>
+    <hr>
+    <form action="plataformaN.php" method="POST" style="margin-top:30px;">
+      <button class="btn btn-info btn-block" id="ajustesPers" name="reiniciarModal"><i class="ion-gear-a" style="float:left;"></i> <strong>Modificar datos</strong></button>
     </form>
   </div>
   <!-- /.box-body -->
