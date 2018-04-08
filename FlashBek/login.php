@@ -21,6 +21,7 @@ require 'validate.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/loginStyle.css" class="style">
     <link rel=icon href="style/iconos/IconPack/6464/gem.png">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
     <a id=flotador target="_blank" href=https://www.behance.net/unknownbeing>Wallpaper por Nicolas Monin-Baroille
@@ -94,12 +95,12 @@ require 'validate.php';
                         <input type="email" class="form-control" id="email2" placeholder="Introduzca su correo electronico" name="email" required>
                     </div>
                     <div class="col-md-12">
-                        <label class="btn btn-danger btn-responsive">
-                            <img src="style/iconos/attachment.png" width=25px height=25px>
+                        <label class="btn btn-danger btn-responsive" style="padding-bottom: 7px;margin-left: 5px;border:2px solid white;">
+                            <i class="ion-happy" style="font-size: 19px;margin-left: 5px;margin-bottom: -3px;margin-top: 2px;"></i>
                             Adjuntar avatar <input type="file" id=imagenF name="avatar" accept="*/image" required style="display:none;">
                         </label>
-                        <label class="btn btn-danger btn-responsive" style="padding-bottom: 7px;margin-left: 5px;">Registrarse
-                         <i class="fa fa-diamond" style="font-size: 19px;margin-left: 5px;"></i>
+                        <label class="btn btn-danger btn-responsive" style="padding-bottom: 7px;margin-left: 5px;border:2px solid white;">Registrarse
+                         <i class="ion-paper-airplane" style="font-size: 19px;margin-left: 5px;margin-bottom: -3px;margin-top: 2px;"></i>
                          <input type="submit" value="Registrarse" name="register" id=botonregistro class="btn btn-outline-primary" style="float:right;display: none;">
                      </label>
                  </div>

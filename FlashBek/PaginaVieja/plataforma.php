@@ -8,7 +8,7 @@
         <meta name="keywords" content="website keywords, website keywords" />
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta http-equiv="refresh" content="222;url=plataforma.php">
-        <link rel="stylesheet" type="text/css" href="../style/plataformaStyle.css" />
+        <link rel="stylesheet" type="text/css" href="style/plataformaStyle.css" />
         <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript">

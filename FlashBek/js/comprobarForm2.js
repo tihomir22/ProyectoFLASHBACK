@@ -49,17 +49,48 @@ function cargarModal(){
         modal.style.display="block";
     });  
 }
+function contarCaracteres(){
+    
+    var escritura=document.getElementById("caracteres");
+    var valor="";
+    valor=valor+this.value;
+    escritura.innerHTML=valor.length;
+    
+
+}
+function reiniciarForm(){
+    document.getElementById("rest1").reset();
+
+}
+function tecladoActivar(event){
+    var evento=event;
+    if(event.ctrlKey && event.keyCode==67){
+    
+        var color=Math.random()*255;
+        var color1=Math.random()*255;
+        var color2=Math.random()*255;
+        color=color.toFixed(0);
+        color1=color1.toFixed(0);
+        color2=color2.toFixed(0);
+
+        var barra=document.getElementById("barraMenu");
+        barra.style.backgroundColor="rgb"+"("+color+","+color1+","+color2+")";
+    }
+    
+}
 
 
 
 
 
 window.onload=function(){
+    
     document.getElementById("sForm").onclick=generarNuevoForm;  
     document.getElementById("item7").onclick=seleccionarCheck;
     document.getElementById("item6").onclick=seleccionarCheck;
     document.getElementById("item5").onclick=seleccionarCheck;
     document.getElementById("item4").onclick=seleccionarCheck;
-    
-
+    document.getElementById("textarea1").onkeyup=contarCaracteres;
+    document.getElementById("reinicio").onclick=reiniciarForm;
+    document.onkeydown=tecladoActivar;
 }

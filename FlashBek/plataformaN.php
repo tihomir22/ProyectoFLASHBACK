@@ -56,7 +56,7 @@ if(isset($_POST['reiniciarModal'])){
         <span>FLASHBACK</span>
     </div>
 
-    <nav>
+    <nav id="barraMenu">
         <?php
         include 'listaNav.php';
         ?>

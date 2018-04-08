@@ -1,5 +1,5 @@
 <!--PARTE 1 DEL MODAL-->
-<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true" id=cluck2m>
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true" id=cluck2m >
     <div class="modal-dialog modal-lg" role="document" style="width:2000px;">
         <div class="modal-content">
             <div class="modal-header">
@@ -24,7 +24,7 @@
                 <div class="alert alert-info" role="alert" style="font-size: 12px;">
                     <strong>Aviso!</strong> Esta parte del formulario no es obligatoria, pero se usará para calcular el perfil del usuario.
                 </div>
-                <form method="POST" action="plataformaN.php">
+                <form method="POST" action="plataformaN.php" id="rest1">
                     <div class="form-check" id=modalForm>
                         <h4>Cuantos libros te has leido?</h4><br>
                         <input class="form-check-input" type="radio" name="radio1" id="exampleRadios1" value="option1" >
@@ -117,9 +117,9 @@
                     <input type="text" name="nombreC" class="form-control" placeholder="Ej: Universidad de Miami">
                 </div><br>
                 <p style="border-bottom: 2px solid gray;margin-left: 30%;margin-right: 30%;"><img style="position: relative;top:25%;left: 40%;width: 20%;margin-bottom: 5px;" src="style/iconos/strong.png"></p><br>
-                <h4>Remata la faena,escribenos algo sobre ti!</h4><br><b></b>
+                <h4>Remata la faena,escribenos algo sobre ti!</h4><span class="badge badge-secondary" id="caracteres" style="float:right;"></span><br><b></b>
                 <div class="md-form mb-4 pink-textarea active-pink-textarea-2">
-                    <textarea type="text" name="textoArea" id="form17" class="md-textarea form-control" rows="3" placeholder="Soy una persona alegre y trabajadora, me gusta disfrutar mi tiempo libre de buena compania, pero aveces cuando prefiero relajarme no hay nada que disfrute mas que un libro y un cafe, el libro realmente no me importa, soy un adicto a todo tipo de lectura. Para mi la lectura es el don mas preciado que nos fue concedido y las sensaciones que transmite son increibles. " style="border-bottom: 1px solid cyan;height:150px;width: 100%;"></textarea>
+                    <textarea type="text" name="textoArea" id="textarea1" class="md-textarea form-control" rows="3" placeholder="Soy una persona alegre y trabajadora, me gusta disfrutar mi tiempo libre de buena compania, pero aveces cuando prefiero relajarme no hay nada que disfrute mas que un libro y un cafe, el libro realmente no me importa, soy un adicto a todo tipo de lectura. Para mi la lectura es el don mas preciado que nos fue concedido y las sensaciones que transmite son increibles. " style="border-bottom: 1px solid cyan;height:150px;width: 100%;"></textarea>
                     
                 </div>
             </div>
@@ -127,7 +127,7 @@
 
             <div class="modal-footer" id="botones">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-warning" data-dismiss="modal" style="color: white;">Reiniciar</button>
+                <button type="button" class="btn btn-warning"  id="reinicio" style="color: white;">Reiniciar</button>
                 <button type="button" class="btn btn-success" id=sForm>Siguiente</button>
 
                 <input type="submit" class="btn btn-primary" id=sForm2 name="enviarModal" value="Finalizar" style="display:none;"></input>

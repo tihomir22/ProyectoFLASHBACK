@@ -36,21 +36,31 @@ function comprobarRegistro(){
         return false;
     }
     if(correoE.length>0){
-        if(correoE.includes("@") && correoE.includes(".")){
-
+        if(comprobarCorreoER()){
         }else{
             alert("El correo no tiene un formato correcto");
             return false;
         }
-    }else{
-        alert("El correo no puede tener 0 caracteres");
-        return false;
     }
+
     if(avatar.length==0){
         alert("Debes elegir un avatar");
         return false;
     }
 
+
+}
+function comprobarCorreoER(){
+    var correoE=document.getElementById("email2").value;
+    var re = /(\w+)\@(\w+)\.[a-zA-Z]/;
+    var testEmail = re.test(correoE);
+
+    if(!testEmail){
+        alert("El correo no tiene un formato correcto");
+        return false;
+    } else {
+        confirm("Es " + correoE + " el email que usted quiere usar?");
+    }
 
 }
 
@@ -60,61 +70,17 @@ function ocultarTodo(){
     var todo=document.getElementsByTagName("form")[0];
     var todo2=document.getElementById("form2");
     if(todo2.style.display=="none"){
-
         todo2.style.display="block";
     }else{
         todo2.style.display="none";
-
     }
 
 }
 
-function seleccionarCheck(){
-
-    if(this.id=="item7"){
-        var label=document.getElementById("label4");
-    }
-    if(this.id=="item6"){
-        var label=document.getElementById("label3");
-    }
-    if(this.id=="item5"){
-        var label=document.getElementById("label2");
-    }
-    if(this.id=="item4"){
-        var label=document.getElementById("label1");
-    }
-    
-    if(label.style.backgroundColor=='green'){
-        label.style.backgroundColor="#7FDBFF";
-
-    }else{
-        label.style.backgroundColor="green";
-    }
-}
-function generarNuevoForm(){
-    var modal=document.getElementById("cuerpoMod");
-    var modal2=document.getElementById("cuerpoMod2");
-    var boton1=document.getElementById("boton1F");
-    var boton2=document.getElementById("boton2F");
-    var boton3=document.getElementById("boton3F");
-    boton2.className="btn btn-default btn-circle";
-    boton3.className="btn btn-primary btn-circle";
-    boton1.disabled="disabled";
-    boton2.disabled="disabled";
-    modal.style.display="none";
-    modal2.style.display="block";
-    
-}
 
 window.onload=function(){
     document.getElementById("registro").onclick=ocultarTodo;
-    /*
-    document.getElementById("item7").onclick=seleccionarCheck;
-    document.getElementById("item6").onclick=seleccionarCheck;
-    document.getElementById("item5").onclick=seleccionarCheck;
-    document.getElementById("item4").onclick=seleccionarCheck;
-    document.getElementById("sForm").onclick=generarNuevoForm;*/
     document.getElementById("iniciar").onclick=comprobarLogin;
     document.getElementById("botonregistro").onclick=comprobarRegistro;
-    
+    document.getElementById("botonregistro").onclick=comprobarCorreoER  
 }
