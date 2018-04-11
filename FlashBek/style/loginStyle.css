@@ -7,7 +7,7 @@
 *{
     margin: 0;
     padding: 0;
-    overflow:hidden;
+    overflow:auto;
 
 }
 body{
@@ -32,6 +32,7 @@ h1{
     font-family: BakersfieldLight;
     margin-bottom: 10px;
     font-size: 50px;
+    overflow:hidden;
 }
 
 label{
@@ -67,7 +68,7 @@ form{
     text-align: center;
 }
 #abajo{
-    margin-top: 95%;
+    margin-top: 10%;
     font-size: 12px;
 }
 #registro{color:darkslategray;}

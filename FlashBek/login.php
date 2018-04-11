@@ -20,6 +20,7 @@ require 'validate.php';
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/loginStyle.css" class="style">
+    <link rel="stylesheet" type="text/css" href="aos/dist/aos.css">
     <link rel=icon href="style/iconos/IconPack/6464/gem.png">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
@@ -37,7 +38,7 @@ require 'validate.php';
 
                 <h1>Poet Platform</h1>
 
-                <form method="post" action="login.php" nctype="multipart/form-data" autocomplete="off" onsubmit="return comprobarLogin()">
+                <form method="post" action="login.php" nctype="multipart/form-data" autocomplete="off" data-aos="fade-up" onsubmit="return comprobarLogin()">
                     <label>Introduzca sus datos para acceder a Poet!</label><br><br>
                     <div class="form-group">
                         <label for="nombre">Nombre de usuario__</label><i class="fa fa-users"></i>
@@ -53,13 +54,13 @@ require 'validate.php';
                     </div>
                     <button type="submit" class="btn btn-primary" id="iniciar" name="inicio">Iniciar sesion</button>
                     <button  type="button" id=registro class="btn btn-outline-primary">Registrarse</button><br><br>
-                   
+
 
                     <a href=passOlvidada.php target="_blank">No puede acceder a su cuenta?</a>
                     <div id=alertInfo class="alert alert-warning" style="margin-right:30px;margin-top:10px;"><?= $_SESSION['message'] ?></div>
                 </form>
                 <!--REGISTRO PARTE1-->
-                <form method="post"  class="md-form" action="login.php"  style="display:none" id=form2 enctype="multipart/form-data" autocomplete="off">
+                <form method="post"  class="md-form" action="login.php"  style="display:none" id=form2 enctype="multipart/form-data" data-aos="fade-up" autocomplete="off" >
                     <label>Registro en la plataforma</label><br><br>
                     <div class="stepwizard" id=stepwizard1 >
                         <div class="stepwizard-row">
@@ -100,22 +101,27 @@ require 'validate.php';
                             Adjuntar avatar <input type="file" id=imagenF name="avatar" accept="*/image" required style="display:none;">
                         </label>
                         <label class="btn btn-danger btn-responsive" style="padding-bottom: 7px;margin-left: 5px;border:2px solid white;">Registrarse
-                         <i class="ion-paper-airplane" style="font-size: 19px;margin-left: 5px;margin-bottom: -3px;margin-top: 2px;"></i>
-                         <input type="submit" value="Registrarse" name="register" id=botonregistro class="btn btn-outline-primary" style="float:right;display: none;">
-                     </label>
-                 </div>
-             </form>
+                           <i class="ion-paper-airplane" style="font-size: 19px;margin-left: 5px;margin-bottom: -3px;margin-top: 2px;"></i>
+                           <input type="submit" value="Registrarse" name="register" id=botonregistro class="btn btn-outline-primary" style="float:right;display: none;">
+                       </label>
+                   </div>
+               </form>
 
-             <label id=abajo>Asegurese de estar accediendo a nuestra pagina web, poet.com , de no ser asi puede que este entrenando en un site de phishing y su cuenta puede correr peligro. Si es asi no dude en reportarlo y contactar con nosotros en el siguiente email: <a>flashbackcompany@gmail.com</a></label>
-         </div>
-     </div>
- </div>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    </body>
+               <label id=abajo>Asegurese de estar accediendo a nuestra pagina web, poet.com , de no ser asi puede que este entrenando en un site de phishing y su cuenta puede correr peligro. Si es asi no dude en reportarlo y contactar con nosotros en el siguiente email: <a>flashbackcompany@gmail.com</a></label>
+           </div>
+       </div>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    </body>
 
- <footer>
+   <footer>
     <script src="js/comprobarForm.js"></script>
-
+    <script src="aos/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+    </script>
 
 
 </footer>

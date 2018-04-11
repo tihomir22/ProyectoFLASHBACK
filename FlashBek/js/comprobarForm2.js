@@ -78,6 +78,12 @@ function tecladoActivar(event){
     }
     
 }
+function cerrarLogro(){
+        this.style.display="none";
+
+    
+
+}
 
 
 
@@ -93,4 +99,5 @@ window.onload=function(){
     document.getElementById("textarea1").onkeyup=contarCaracteres;
     document.getElementById("reinicio").onclick=reiniciarForm;
     document.onkeydown=tecladoActivar;
+    document.getElementById("logroInf").onclick=cerrarLogro;
 }

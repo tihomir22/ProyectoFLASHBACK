@@ -69,10 +69,13 @@ function comprobarCorreoER(){
 function ocultarTodo(){
     var todo=document.getElementsByTagName("form")[0];
     var todo2=document.getElementById("form2");
+    var infoAbajo=document.getElementById("abajo");
     if(todo2.style.display=="none"){
         todo2.style.display="block";
+        infoAbajo.style.display="none";
     }else{
         todo2.style.display="none";
+        infoAbajo.style.display="block";
     }
 
 }

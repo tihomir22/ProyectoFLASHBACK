@@ -29,6 +29,7 @@ if(isset($_POST['reiniciarModal'])){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="aos/dist/aos.css">
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/series-label.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
@@ -40,73 +41,77 @@ if(isset($_POST['reiniciarModal'])){
     ?>
 </head>
 <body>
-  <?php 
-  include 'includes/detectarEnvioModal.php';
-  ?>
-  <div class="header">
-    <div class="logo">
-        <i class="fa fa-hashtag"></i>
-        <span>FLASHBACK</span>
-    </div>
-    <a href="#" class="nav-trigger"><span></span></a>
-</div>
-<div class="side-nav">
-    <div class="logo">
-        <i class="fa fa-hashtag"></i>
-        <span>FLASHBACK</span>
-    </div>
+    <?php 
+    include 'includes/conseguirLogros.php';
 
-    <nav id="barraMenu">
-        <?php
-        include 'listaNav.php';
-        ?>
-    </nav>
-</div>
-<div class="main-content" id="wrapper">
-    <div class="alert alert-success "><?= $_SESSION['message']." Y has conseguido ".'<strong>10 puntos de experencia</strong>' ?>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+    ?>
+    <?php 
+    include 'includes/detectarEnvioModal.php';
+    ?>
+    <div class="header">
+        <div class="logo">
+            <i class="fa fa-hashtag"></i>
+            <span>FLASHBACK</span>
+        </div>
+        <a href="#" class="nav-trigger"><span></span></a>
     </div>
+    <div class="side-nav">
+        <div class="logo">
+            <i class="fa fa-hashtag"></i>
+            <span>FLASHBACK</span>
+        </div>
 
-    <div class="title">
-        Dashboard
-    </div>
-    <div class="row">
-        <?php
-        include 'barraExp.php';
-        ?>
-    </div>
-    <div class="main">
-        <div class="widget" style="height: 100%;">
-            <div class="title" style="border-bottom: 2px solid #0074D9;">Perfil</div>
+        <nav id="barraMenu">
             <?php
-            echo '<br>';
-            include 'includes/perfil.php';
+            include 'listaNav.php';
+            ?>
+        </nav>
+    </div>
+    <div class="main-content" id="wrapper">
+        <div class="alert alert-success "><?= $_SESSION['message']." Y has conseguido ".'<strong>10 puntos de experencia</strong>' ?>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="title">
+            Dashboard
+        </div>
+        <div class="row">
+            <?php
+            include 'barraExp.php';
             ?>
         </div>
-        <div class="widget" style="height: 100%;"">
-            <div class="title" style="border-bottom: 2px solid #FF851B;">Sobre mi</div>
-            <?php
-            echo '<br>';
-            include 'includes/sobremi.php';
-            ?>
-        </div>
-        <div class="widget" style="height: 100%;">
-            <div class="title" style="border-bottom: 2px solid #01FF70">Logros</div>
-            <?php include 'includes/imprimirLogros.php'; 
-            include 'includes/conseguirLogros.php';
-            ?>
-            <br>
-            <div>
-               <div class="title" style="border-bottom: 2px solid #3D9970">Publicaciones</div>
-               <?php include 'includes/publicaciones.php' ?>
+        <div class="main">
+            <div class="widget" style="height: 100%;">
+                <div class="title" style="border-bottom: 2px solid #0074D9;">Perfil</div>
+                <?php
+                echo '<br>';
+                include 'includes/perfil.php';
+                ?>
+            </div>
+            <div class="widget" style="height: 100%;"">
+                <div class="title" style="border-bottom: 2px solid #FF851B;">Sobre mi</div>
+                <?php
+                echo '<br>';
+                include 'includes/sobremi.php';
+                ?>
+            </div>
+            <div class="widget" style="height: 100%;">
+                <div class="title" style="border-bottom: 2px solid #01FF70">Logros</div>
+                <?php 
+                include 'includes/imprimirLogros.php'; 
+                ?>
+                <br>
+                <div>
+                 <div class="title" style="border-bottom: 2px solid #3D9970">Publicaciones</div>
+                 <?php include 'includes/publicaciones.php' ?>
 
-           </div>
-       </div>
+             </div>
+         </div>
 
-   </div>
-   <hr>
+     </div>
+     <hr>
    <!--
    <div class="row">
     <div class="col-md-9" id=divChart3 style="width: 50%;margin-top: 100px;">
@@ -258,4 +263,10 @@ if(isset($_POST['reiniciarModal'])){
 </script>
 -->
 </footer>
+<script src="aos/dist/aos.js"></script>
+<script type="text/javascript">
+    AOS.init({
+        easing: 'ease-in-out-sine'
+    });
+</script>
 </html>
