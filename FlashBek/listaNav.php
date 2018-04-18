@@ -23,7 +23,7 @@
     </li>
 
     <li class="active">
-        <a href="#">
+        <a href="plataformaN.php">
             <span><i class="fa fa-bar-chart"></i></span>
             <span>Dashboard</span>
         </a>
@@ -49,6 +49,13 @@
             <span>Escribir</span>
         </a>
     </li>
+    <li id="forja" >
+        <a href="forja.php">
+
+            <span><i class="ion-fireball" style="font-size: 20px;"></i></span>
+            <span style="margin-left: 18px;">The Forge</span>
+        </a>
+    </li>
     <li>
         <a href="#">
 
@@ -59,7 +66,7 @@
     <li>
         <a href="#">
 
-            <span><i class="    fa fa-life-bouy"></i></span>
+            <span><i class="fa fa-life-bouy"></i></span>
             <span>Contactar</span>
         </a>
     </li>

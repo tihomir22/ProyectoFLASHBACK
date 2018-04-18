@@ -16,7 +16,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Source Sans Pro', sans-serif;
-	background-color: #d5dae5;
+	background-color: white;
 	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 }
@@ -95,7 +95,8 @@ h4{
 .side-nav {
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 150%;
+	margin:0 auto;
 	background-color: #35475e;
 	z-index: 1;
 	display: none;
@@ -158,7 +159,7 @@ h4{
 
 }
 li a:hover{
-	border-bottom: 2px solid white;
+	border-bottom: 1px solid white;
 }
 @media (max-width: 1200px){
 	.side-nav{
