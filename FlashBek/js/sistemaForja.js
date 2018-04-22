@@ -11,20 +11,18 @@ function drag_start(event) {
 function drag_drop(event) {
 	event.preventDefault(); 
 	var longitudLogros=_("logros_zone").children.length;
-	var longitudLogrosReal=longitudLogros-6;
-	alert("Hay "+longitudLogrosReal+"logros");
+	var longitudLogrosReal=longitudLogros-4;
+
 	if(longitudLogrosReal==0){
 		$("#contenedorLogros").hide(1000);
 		setTimeout(function(){ _("drop_zone").className="col-md-12 card"; }, 1000);
-		
 
 	}
 	var longitud=_("drop_zone").children.length;
 	var longitudReal=longitud-2;
-	_("escritura1").innerHTML="<h3>"+"Usted quiere fundir: "+longitudReal+" "+"logros"+"</h3>";
+	_("escritura1").innerHTML="<h3 style=margin-top:12px;>"+"Usted quiere fundir: "+longitudReal+" "+"logros"+"</h3>";
 	var elem_id = event.dataTransfer.getData("text");
 	event.target.appendChild( _(elem_id) );
-	
 	_(elem_id).removeAttribute("draggable");
 	_(elem_id).style.cursor = "default";
 
@@ -50,7 +48,8 @@ function readDropZone(){
 		}
 		//alert(_("drop_zone").children[i].id+" is in the drop zone");
 	}
-	alert(pepe);
+	window.location ="?logr="+pepe;
+	
 
 }
 
