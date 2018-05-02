@@ -43,7 +43,7 @@
         </a>
     </li>
     <li>
-        <a href="#">
+        <a href="plataformaN.php?seccion=escribir">
 
             <span><i class="fa fa-pencil"></i></span>
             <span>Escribir</span>

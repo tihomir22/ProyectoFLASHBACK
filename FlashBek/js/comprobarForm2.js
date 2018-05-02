@@ -50,7 +50,7 @@ function cargarModal(){
     });  
 }
 function contarCaracteres(){
-    
+
     var escritura=document.getElementById("caracteres");
     var valor="";
     valor=valor+this.value;
@@ -65,7 +65,7 @@ function reiniciarForm(){
 function tecladoActivar(event){
     var evento=event;
     if(event.ctrlKey && event.keyCode==67){
-    
+
         var color=Math.random()*255;
         var color1=Math.random()*255;
         var color2=Math.random()*255;
@@ -79,10 +79,30 @@ function tecladoActivar(event){
     
 }
 function cerrarLogro(){
-        this.style.display="none";
+    this.style.display="none";
 
-    
+}
+function cambiazoCssPorInput(){
+    $(this).hide(2000);
+    setTimeout($("#input01text2").fadeIn(),1000);
 
+}
+
+function buscarOpinion(){
+   var seleccionado=this.options[this.selectedIndex].text;
+   if(seleccionado=="Opinion"){
+    $("#categoriasTODAS").hide(1000);
+    $("#publicacionID").show(1000);
+}else{
+    $("#categoriasTODAS").show(1000);
+    $("#publicacionID").hide(1000);
+}
+}
+function comprobarTitulo(){
+    var textinput=document.getElementById("input01text2");
+    if (textinput.style.display=="none") {
+        alert("Debes de introducir un titulo antes de continuar!");
+    }
 }
 
 
@@ -90,7 +110,7 @@ function cerrarLogro(){
 
 
 window.onload=function(){
-    
+
     document.getElementById("sForm").onclick=generarNuevoForm;  
     document.getElementById("item7").onclick=seleccionarCheck;
     document.getElementById("item6").onclick=seleccionarCheck;
@@ -99,5 +119,9 @@ window.onload=function(){
     document.getElementById("textarea1").onkeyup=contarCaracteres;
     document.getElementById("reinicio").onclick=reiniciarForm;
     document.onkeydown=tecladoActivar;
-    document.getElementById("logroInf").onclick=cerrarLogro;
+    //document.getElementById("logroInf").onclick=cerrarLogro;
+    document.getElementById("autoWriter").onclick=cambiazoCssPorInput;
+    document.getElementById("opciones").onchange=buscarOpinion;
+    document.getElementById("enviarTxt").onclick=comprobarTitulo;
+
 }

@@ -77,6 +77,7 @@ if(isset($_GET['logr'])){
 	$longitud=$longitud-1;
 	$yaExiste=true;
 	$esNulo=esNulo($idUsuario,$mysqli,$listaIdTitulos);
+	//Se comprueba si los logros forjados tienen el id 7 y 8
 	if(in_array("7", $arrayLogros) && (in_array("8", $arrayLogros)) && $longitud=="2"){
 		if($esNulo===true){
 			$sql="UPDATE perfil_usuario SET idListaTitulos='1' WHERE idUsuario=$idUsuario";
@@ -84,8 +85,8 @@ if(isset($_GET['logr'])){
 		}else{
 			$yaExiste=yaExiste($listaIdTitulos,'1');
 			if($yaExiste===true){
-				echo '<h1 style="color:white;">Ya tienes este titulo fill de puta</h1>';
-				$sql="";
+				echo '<h1 style="color:white;"><i class="ion-alert"></i> Ya tienes este titulo ! Prueba otra combinacion <i class="ion-alert"></i></h1>';
+				
 			}else{
 				$sql="UPDATE perfil_usuario SET idListaTitulos=concat(idListaTitulos,'.1') WHERE idUsuario=$idUsuario"; 
 				imprimirLogroConseguido('1',$mysqli);
@@ -93,11 +94,70 @@ if(isset($_GET['logr'])){
 			}
 		}
 	}
-	if($esNulo===true || $yaExiste===false){
-		if($mysqli->query($sql)===true){
+	//Se compruea si los logros forjados tienen el id 8,10,11,12
+	if(in_array("8", $arrayLogros) && (in_array("10", $arrayLogros)) && (in_array("11", $arrayLogros)) && (in_array("12", $arrayLogros)) && $longitud=="4"){
+		if($esNulo===true){
+			$sql="UPDATE perfil_usuario SET idListaTitulos='2' WHERE idUsuario=$idUsuario";
+			imprimirLogroConseguido('2',$mysqli,$listaIdTitulos); 
+		}else{
+			$yaExiste=yaExiste($listaIdTitulos,'2');
+			if($yaExiste===true){
+				echo '<h1 style="color:white;"><i class="ion-alert"></i> Ya tienes este titulo ! Prueba otra combinacion <i class="ion-alert"></i></h1>';
+				
+			}else{
+				$sql="UPDATE perfil_usuario SET idListaTitulos=concat(idListaTitulos,'.2') WHERE idUsuario=$idUsuario"; 
+				imprimirLogroConseguido('2',$mysqli);
+
+			}
+		}
+	}
+	//Se comprueba si los logros forjados tienen el id 8,10 TITULO CAPATAZ
+	if(in_array("8", $arrayLogros) && (in_array("10", $arrayLogros)) && $longitud=="2"){
+		if($esNulo===true){
+			$sql="UPDATE perfil_usuario SET idListaTitulos='3' WHERE idUsuario=$idUsuario";
+			imprimirLogroConseguido('3',$mysqli,$listaIdTitulos); 
+		}else{
+			$yaExiste=yaExiste($listaIdTitulos,'3');
+			if($yaExiste===true){
+				echo '<h1 style="color:white;"><i class="ion-alert"></i> Ya tienes este titulo ! Prueba otra combinacion <i class="ion-alert"></i></h1>';
+				
+			}else{
+				$sql="UPDATE perfil_usuario SET idListaTitulos=concat(idListaTitulos,'.3') WHERE idUsuario=$idUsuario"; 
+				imprimirLogroConseguido('3',$mysqli);
+
+			}
+		}
+	}
+	$hoy = getdate(date("U"));
+	$dia=$hoy['mday'];
+	$mes=$hoy['mon'];
+	//Se comprueba si los logros forjados tienen el id 13 y si el dia de la forja es 28/02
+	if(in_array("13", $arrayLogros) && $dia=="14" && $mes=="2" && $longitud=="1"){
+		if($esNulo===true){
+			$sql="UPDATE perfil_usuario SET idListaTitulos='3' WHERE idUsuario=$idUsuario";
+			imprimirLogroConseguido('3',$mysqli,$listaIdTitulos); 
+		}else{
+			$yaExiste=yaExiste($listaIdTitulos,'3');
+			if($yaExiste===true){
+				echo '<h1 style="color:white;"><i class="ion-alert"></i> Ya tienes este titulo ! Prueba otra combinacion <i class="ion-alert"></i></h1>';
+				
+			}else{
+				$sql="UPDATE perfil_usuario SET idListaTitulos=concat(idListaTitulos,'.3') WHERE idUsuario=$idUsuario"; 
+				imprimirLogroConseguido('3',$mysqli);
+
+			}
+		}
+	}
+
+	//------------------------------------------------------------------------------------
+	if(isset($sql)){
+		if($esNulo===true || $yaExiste===false){
+			if($mysqli->query($sql)===true){
+
+			}
 		}
 	}else{
-		echo '<h1 style="color:red;">Combinacion incorrecta o ya tienes el titulo</h1>';
+		echo '<h1 style="color:red;">ERROR 0001 : Combinacion incorrecta</h1>';
 	}
 
 }
@@ -143,7 +203,7 @@ if(isset($_GET['logr'])){
 
 			<div id="conteForja" class="row" style="display:none;color:white;width: 100%;">
 
-				<div id="drop_zone" class="col-md-6 card" style="display:inline-block;background-color: #57BC90;text-align: right;height: 95%;" ondrop="drag_drop(event)" ondragover="return false" >
+				<div id="drop_zone" class="col-md-6 card" style="display:inline-block;background-color: #57BC90;text-align: right;height: 100%;" ondrop="drag_drop(event)" ondragover="return false" >
 					<div class="card-header"><h4 style="color: white;margin-top: -8px;" >La forja <i class="ion-fireball"></i></h4></div>
 					<div class="card-body" id=eliminar1 style="margin-top: -8px;text-align: center;font-family: BakersfieldLight;"><br>
 						<h3 class="card-subtitle mb-2">"Droppea" los logros aqui!</h3>
@@ -177,7 +237,9 @@ if(isset($_GET['logr'])){
 					</div>
 				</div>
 			</div>
-			<button id="forjarBtn" class="btn btn-outline-danger btn-large" onclick="readDropZone()" style="display:none;">FORJAR</button>
+			<div class="col-md-12 clearfix" style="margin-left: -20px;">
+				<button id="forjarBtn" class="btn btn-outline-danger btn-large" onclick="readDropZone()" style="display:none;margin-left: -10px;">FORJAR</button>
+			</div>
 			<div class="row">
 
 				<div class="col-md-12" id="enano">
