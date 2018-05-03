@@ -14,7 +14,35 @@ if($resultadoPubli->num_rows==0){
 	echo '<img src="style/skulls.png" style="width:100%;height:220px;" class="img-fluid" alt="Responsive image">';
 
 }else{
-	echo 'algo tienes we';
+	while ($row = mysqli_fetch_array($resultadoPubli)) {
+		$letraInicial=$row['titulo'][0];
+		$colorAleatorio1=rand(1,255);
+		$colorAleatorio2=rand(1,255);
+		$colorAleatorio3=rand(1,255);
+		$rgb='rgb('.$colorAleatorio1.','.$colorAleatorio2.','.$colorAleatorio3.')';
+		$resTipoPubli="null";
+		if($row['tipo']!=null){
+			if($row['tipo']==1){
+				$resTipoPubli="Libro";
+			}elseif ($row['tipo']==2) {
+				$resTipoPubli="Capitulo";
+			}elseif ($row['tipo']==3) {
+				$resTipoPubli="Blog";
+			}else{
+				$resTipoPubli="Opinion";
+			}
+
+		}
+		
+		$i++;
+		echo '<div class="row">';
+		echo '<div class="col-md-1" style="background-color:'.$rgb.';text-align:center;font-size:30px;border-radius:50%;margin-left:3%;margin-top:1%;color:white;">'.$letraInicial.'</div>';
+		echo '<div class="col-md-10"><h5 style="margin-bottom:4px;padding-left:2px;">'.$row['titulo'].'</h5><span class="badge badge-primary">'.$resTipoPubli.'</span></div>';
+		echo '</div>';
+		
+
+
+	}
 }
 
 

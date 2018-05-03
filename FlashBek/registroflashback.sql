@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-05-2018 a las 06:50:38
+-- Tiempo de generación: 03-05-2018 a las 22:14:14
 -- Versión del servidor: 10.1.29-MariaDB
 -- Versión de PHP: 7.2.0
 
@@ -74,10 +74,11 @@ CREATE TABLE `perfil_usuario` (
 --
 
 INSERT INTO `perfil_usuario` (`idPerfil`, `libros_leidos`, `gusta_escribir`, `definicion_chkbox`, `estudios_chkbox`, `lugar_estudio`, `textArea_sobreti`, `idUsuario`, `modal`, `logrosID`, `idListaTitulos`) VALUES
-(7, '0-2 libros en mi vida', 'Lo he intentado pero me cansÃ©.', '.val1.val2.val3.val4', '.primaria.secundaria.nouni.uni', 'bvcnvnvbnvb', 'nvbnvbnbvdsdsxvhfchresfdgdfgdf', 24, 1, '7.8.9', '1'),
+(7, '0-2 libros en mi vida', 'Tengo un libro listo para su publicacion.', '.val1.val2', '.primaria.secundaria.nouni', 'IES simarro la cabra', 'Hey hey heyyyyyyyyyyyyyyyyyyyyyyyy Hey hey heyyyyyyyyyyyyyyyyyyyyyyyyHey hey heyyyyyyyyyyyyyyyyyyyyyyyyHey hey heyyyyyyyyyyyyyyyyyyyyyyyyHey hey heyyyyyyyyyyyyyyyyyyyyyyyyHey hey heyyyyyyyyyyyyyyyyyyyyyyyy', 24, 1, '7.8.9', '1'),
 (13, '0-2 libros en mi vida', 'Tengo un libro listo para su publicacion.', '.val1.val2', '.primaria.secundaria', 'ehg', 'fdghdfgdfhgherrgervergergerrgr', 26, 1, '7.9', NULL),
 (25, 'Me leo uno a la semana :D', 'Lo he intentado pero me cansÃ©.', '.val2.val3.val4', '.primaria', 'ehfhgfhgfhgfhgfhgfhf', 'ehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhfehfhgfhgfhgfhgfhgfhf', 27, 1, '7.9', NULL),
-(26, '0-2 libros en mi vida', 'Lo he intentado pero me cansÃ©.', '.val2.val3', 'Los estudios no son necesarios, y muchos menos obl', '', '', 28, 1, '7.9', NULL);
+(26, '0-2 libros en mi vida', 'Lo he intentado pero me cansÃ©.', '.val2.val3', 'Los estudios no son necesarios, y muchos menos obl', '', '', 28, 1, '7.9', NULL),
+(28, '0-2 libros en mi vida', 'Lo he intentado pero me cansÃ©.', '.val1.val2.val3', '.primaria.secundaria.nouni.uni', 'Prueba.............', 'Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............Prueba.............', 29, 1, '7.9', NULL);
 
 -- --------------------------------------------------------
 
@@ -149,10 +150,11 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`idUsuarios`, `username`, `email`, `password`, `avatar`, `Nivel`, `Rango`, `Creada`, `Experencia`) VALUES
-(24, 'tihomir619', 'tihomir_alcudia3@hotmail.com', '6ddb4bea8207c2c7a8aaaddc02b8ea28', 'images/myAvatar.png', 6, 'Desconocido', '2018-03-30 09:48:14', 340),
+(24, 'tihomir619', 'tihomir_alcudia3@hotmail.com', '14d85f16270898df7d970aef76074176', 'images/myAvatar.png', 6, 'Desconocido', '2018-03-30 09:48:14', 390),
 (26, 'andreufilldeputa', 'andreufilldeputa@gmail.com', '6ddb4bea8207c2c7a8aaaddc02b8ea28', 'images/Penguins.jpg', 1, 'Desconocido', '2018-04-06 11:41:18', 60),
 (27, 'prueba123', 'prueba123@gmail.com', 'fa5a02c9cc183b3ff1bfcd4c2243f85c', 'images/fotonoticia_20171117100545_640.jpg', 1, 'Desconocido', '2018-04-08 10:58:46', 40),
-(28, 'andreufurioso', 'andreufurioso@gmail.com', '1212e80f2739954e1966b5f2f2e6a1c5', 'images/Hydrangeas.jpg', 1, 'Desconocido', '2018-04-12 05:12:56', 10);
+(28, 'andreufurioso', 'andreufurioso@gmail.com', '1212e80f2739954e1966b5f2f2e6a1c5', 'images/Hydrangeas.jpg', 1, 'Desconocido', '2018-04-12 05:12:56', 10),
+(29, 'prueba321', 'mamamia@cuandoserasmia.com', '5e7b5f0ef3cccfac9b9022576cca466d', 'images/3.jpg', 1, 'Desconocido', '2018-05-03 20:09:25', 10);
 
 --
 -- Índices para tablas volcadas
@@ -203,7 +205,7 @@ ALTER TABLE `logros`
 -- AUTO_INCREMENT de la tabla `perfil_usuario`
 --
 ALTER TABLE `perfil_usuario`
-  MODIFY `idPerfil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `idPerfil` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT de la tabla `publicaciones`
@@ -221,7 +223,7 @@ ALTER TABLE `rangos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `idUsuarios` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `idUsuarios` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- Restricciones para tablas volcadas
